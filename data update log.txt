@@ -1,0 +1,21 @@
+This instruction shows step by step guide for NUV data update
+
+1. Go to "S&P500list4.xlsm" update data. Follow the instruction on "instruction" tab to complete taskes:
+	- identify new S&P500 members
+	- delist any aqcuired stocks
+	- define current trading universe
+
+2. Copy following files to "Reachit Beta" GU>1.Investment>Data>SNP500 (overwrite all)
+	NUV.mat
+	Universeopen.csv
+	Universeclose.csv
+	Universehigh.csv
+	Universelow.csv
+	SPY_MarketIndex.csv
+	trading universe.xlsx
+	NUVimportfile.m
+	dataload.m
+
+3. Go to "trading universe.xlsx" and update "conid" of trading universe
+
+4. Run 'NUVdataload.m'
